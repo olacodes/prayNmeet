@@ -8,7 +8,7 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ADD requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-RUN rm requirements.txt
+# RUN rm requirements.txt
 
 # copy application codebase
 RUN mkdir /app
